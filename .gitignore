@@ -1,3 +1,17 @@
+models/aesrgan.mlmodel
+models/bsrgan.mlmodel
+models/dasr.mlpackage
+models/realesrganAnime512.mlmodel
+realcugan/Real-CUGAN/weights_v3
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+.DS_Store
+*.pt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

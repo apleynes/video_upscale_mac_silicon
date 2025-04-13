@@ -1,0 +1,6 @@
+python-ffmpeg
+opencv-python
+numpy
+pymediainfo
+scikit-video
+coremltools
