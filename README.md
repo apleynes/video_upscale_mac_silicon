@@ -4,6 +4,25 @@ This project is a video upscaler that uses CoreML on Apple Silicon to leverage t
 
 This is a work in progress! Pushing now so that it's out there for others to use and modify.
 
+Performance (M1 Mac Mini, Late-2020):
+- Fast-SRGAN runs 2x upscaling of 240p input at 5-6 fps on PyTorch with MPS backend.
+- Fast-SRGAN runs 2x upscaling of 240p input at 12-13 fps on ONNX with CoreMLExecutionProvider backend.
+- Fast-SRGAN runs 2x upscaling of 240p input at 24-26 fps on CoreML on Apple Neural Engine.
+- RealCUGAN runs 2x upscaling of 240p input at 30-40 fps on CoreML on Apple Neural Engine.
+
+Comparative performance of 2x upscaling (NVIDIA 2070 Max-Q mobile GPU, Video2xQT6, Windows 10, Intel i7-9750H):
+- RealCUGAN runs 2x upscaling of 240p input at 50-60 fps.
+
+Install `asitop` to monitor ANE utilization.
+
+```bash
+brew install asitop
+```
+
+```bash
+sudo asitop
+```
+
 ## Installation
 
 1. Install MacOS requirements
