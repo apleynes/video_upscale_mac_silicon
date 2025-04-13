@@ -57,6 +57,13 @@ RealCUGAN source code is stored and modified to allow for export to CoreML. Ther
 
 See `/Users/apleynes/Documents/dev/video_upscale_mac_silicon/realcugan/Real-CUGAN/export_model_to_coreml.py` for exporting the model to CoreML.
 
+Use [netron](https://github.com/lutzroeder/netron) to view the traced PyTorch model for debugging the conversion to CoreML.
+
+```bash
+pip install netron
+netron traced_model.pt
+```
+
 ## References
 
 https://apple.github.io/coremltools/docs-guides/source/convert-pytorch-workflow.html
