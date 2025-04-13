@@ -55,6 +55,8 @@ python inference_video.py -i input_video.mp4 -o output_directory -s 4
 
 RealCUGAN source code is stored and modified to allow for export to CoreML. There were a bunch of lines that were using negative padding, which is not supported in CoreML. I've converted them to just slicing the tensor to get the model to export properly.
 
+See `/Users/apleynes/Documents/dev/video_upscale_mac_silicon/realcugan/Real-CUGAN/export_model_to_coreml.py` for exporting the model to CoreML.
+
 ## Credits
 
 - [Fast-SRGAN](https://github.com/HasnainRaz/Fast-SRGAN)
