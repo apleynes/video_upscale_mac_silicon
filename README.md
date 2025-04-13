@@ -57,6 +57,14 @@ RealCUGAN source code is stored and modified to allow for export to CoreML. Ther
 
 See `/Users/apleynes/Documents/dev/video_upscale_mac_silicon/realcugan/Real-CUGAN/export_model_to_coreml.py` for exporting the model to CoreML.
 
+## References
+
+https://apple.github.io/coremltools/docs-guides/source/convert-pytorch-workflow.html
+
+https://apple.github.io/coremltools/docs-guides/source/image-inputs.html
+
+https://apple.github.io/coremltools/docs-guides/source/flexible-inputs.html#set-the-range-for-each-dimension
+
 ## Credits
 
 - [Fast-SRGAN](https://github.com/HasnainRaz/Fast-SRGAN)
