@@ -368,8 +368,8 @@ def main():
     # if args.extract_frame_first and not is_video:
         # args.extract_frame_first = False
         
-    args.video_name = os.path.splitext(os.path.basename(args.input))[0]
-    video_save_path = os.path.join(args.output, f'{args.video_name}_{args.suffix}.mp4')
+    args.video_name, file_ext = os.path.splitext(os.path.basename(args.input))
+    video_save_path = os.path.join(args.output, f'{args.video_name}_{args.suffix}.{file_ext}')
     inference_video(args, video_save_path)
 
 

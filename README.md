@@ -29,7 +29,7 @@ RealCUGAN models are only supported for 240p input due to bugs in flexible input
 Modify the `inference_video.py` script to use the model you want to use. TODO: make model selection configurable.
 
 ```bash
-python inference_video.py -i inputs/ -o results/ -s 4
+python inference_video.py -i input_video.mp4 -o output_directory -s 4
 ```
 
 ## Development notes
